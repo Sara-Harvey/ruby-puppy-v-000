@@ -18,7 +18,3 @@ class Dog
   end
 
 end
-
-Max = Dog.new("Max")
-Sudie = Dog.new("Sudie")
-Dog.all
