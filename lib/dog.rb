@@ -1,18 +1,16 @@
 class Dog
  
   @@all = []
-
+ 
   attr_accessor :name
  
   def initialize(name)
-    #@name = name
-    @@all << self
+    @name = name
+    @@all << name
   end
  
   def self.all
-    @@name.each do 
-    puts @name
-  end
+    puts @@all
   end
   
   def self.clear_all
@@ -20,3 +18,7 @@ class Dog
   end
 
 end
+
+Max = Dog.new("Max")
+Sudie = Dog.new("Sudie")
+Dog.all
